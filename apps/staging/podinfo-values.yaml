@@ -10,9 +10,12 @@ spec:
   test:
     enable: false
   values:
+    replicaCount: 3
+    ui:
+      message: "Hellloooo all"
     ingress:
       hosts:
-        - host: podinfo.staging
+        - host: podinfo.azureaksstuff.com
           paths:
             - path: /
               pathType: ImplementationSpecific
